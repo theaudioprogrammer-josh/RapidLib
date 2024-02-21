@@ -35,7 +35,7 @@ set(RAPIDLIB_FULL_SRC
 		${BAYES_SRC}
 	)
 
-add_library(${PROJECT_NAME} SHARED ${RAPIDLIB_FULL_SRC})
+add_library(${PROJECT_NAME} ${RAPIDLIB_FULL_SRC})
 add_executable(rapidLibTest test/rapidLibTest.cpp)
 
 #include(GenerateExportHeader)
